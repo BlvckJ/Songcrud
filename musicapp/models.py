@@ -22,7 +22,7 @@ class Song(models.Model):
 
     date_released = models.DateTimeField(auto_now=True)
 
-    likes = models.IntegerField()
+    likes = models.PositiveIntegerField()
 
     artiste_id = models.ForeignKey( Artiste, on_delete= models.CASCADE)
 
